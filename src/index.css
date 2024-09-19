@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+:root {
+  --White-color: hsl(0, 0%, 100%);
+  --Light-grayish-violet: hsl(270, 3%, 87%);
+  --Dark-grayish-violet: hsl(279, 6%, 55%);
+  --Very-dark-violet: hsl(278, 68%, 11%);
+  --red-msg-error: hsl(0, 100%, 66%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(204, 226, 226);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  background-color: var(--White-color);
+  height: 100vh;
+}
+
+
+.container-card {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  height: 250px;
+  position: relative;
+  background-image: url(assets/bg-main-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-card p {
+  position: absolute;
+  color: var(--Light-grayish-violet);
+  font-size: 11px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  top: 43.5%;
+  left: 79%;
+}
+
+/* cartões */
+
+.front-card {
+  position: absolute;
+  width: 290px;
+  height: 170px;
+  top: 17.5%;
+  margin-left: 1rem;
+  z-index: 2;
+  background-image: url(assets/bg-card-front.png);
+  background-size: cover;
+  border-radius: 7px;
+  box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.3);
+}
+
+.front-card p {
+  font-size: 17px;
+  color: var(--White-color);
+  text-align: center;
+  letter-spacing: 2px;
+  padding-top: 1rem;
+  
+}
+
+.name-card {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+}
+
+.name-card p {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.card-logo {
+margin: 1.5rem;
+width: 60px;
+}
+
+.back-card {
+  width: 290px;
+  height: 170px;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* formulario submetido */
+.form-submitted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7rem;
+}
+
+.form-submitted h1 {
+  padding-top: 2rem;
+  letter-spacing: 5px;
+}
+
+.form-submitted p {
+  padding-top: 1rem;
+  opacity: 50%;
+  letter-spacing: 2px;
+}
+
+.form-submitted button {
+  margin-top: 4rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+
+/* ----------------- */
+.container-form {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  padding-top: 5rem;
+}
+
+.input-name-number {
+  padding: 0.7rem;
+  border-radius: 7px;
+  border: solid 1px var(--Light-grayish-violet);
+}
+
+label {
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+input::placeholder {
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--Light-grayish-violet);
+}
+
+
+/* Mensagem de erro */
+
+.msg-error {
+  padding-top: .5rem;
+  font-size: 10px;
+  color: var(--red-msg-error);
+}
+
+.input-error-number {
+  padding: 0.7rem;
+  border-radius: 7px;
+  border: solid 1px var(--red-msg-error);
+  
+}
+
+.input-error-date {
+  padding: 0.7rem;
+  border-radius: 7px;
+  border: solid 1px var(--red-msg-error);
+  margin-right: .5rem;
+  margin-top: .5rem;
+}
+
+/* container data e cvc */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.grid1 input {
+  width: 4rem;
+}
+
+.input-year {
+  width: 4rem;
+  padding: .7rem;
+  margin-top: .5rem;
+  border-radius: 7px;
+  border: solid 1px var(--Light-grayish-violet);
+}
+
+.input-month {
+  width: 4rem;
+  padding: .7rem;
+  margin-top: .5rem;
+  border-radius: 7px;
+  border: solid 1px var(--Light-grayish-violet);
+  margin-right: .5rem;
+}
+
+.grid2 input {
+  width: 10rem;
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  border-radius: 7px;
+  border: solid 1px var(--Light-grayish-violet);
+}
+
+.input-cvc {
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  border-radius: 7px;
+  border: solid 1px var(--Light-grayish-violet);
+}
+
+button {
+  padding: .9rem;
+  margin-bottom: 2rem;
+  border-radius: 7px;
+  border: transparent;
+  background-color: var(--Very-dark-violet);
+  color: var(--White-color);
+  letter-spacing: 1px;
+}
+
+/* responsividade para computador */
+
+@media(min-width: 1180px) {
+  .container {
+  flex-direction: row;
+  width: 100vw
+  }
+
+  .container-card {
+    background-image: url(assets/bg-main-desktop.png);
+    background-position: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 450px;
+  }
+
+
+  .container-form {
+    padding-left: 15rem;
+  }
+
+  .front-card {
+    left: 12%;
+    width: 330px;
+    height: 190px;
+  }
+
+  .front-card p {
+    padding-top: 1.5rem;
+    letter-spacing: 4px;
+  }
+
+  .container-card p {
+    z-index: 1;
+    position: absolute;
+    top: 61.5%;
+    left: 129%;
+    font-size: 14px;
+  }
+
+  .back-card {
+    position: relative;
+    left: 50%;
+    top: 14%;
+    width: 330px;
+    height: 190px;
+    
+  }
+
+  .container-form {
+    margin-left: 9rem;
+    justify-content: center;
+    width: 585px;
+  }
+
+
+  /* formulario submetido */
+
+  .form-submitted{
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
