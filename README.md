@@ -7,3 +7,7 @@ Este projeto foi desenvolvido como um desafio proposto pelo site Frontend Mentor
 # Link do desafio
 
 [Interactive card](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw)
+
+# Minha solução do desafio
+
+https://interactive-card-snowy.vercel.app/
