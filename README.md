@@ -2,7 +2,7 @@
 
 Este projeto foi desenvolvido como um desafio proposto pelo site Frontend Mentor. A solução foi implementada utilizando React e CSS puro. O objetivo foi reproduzir fielmente o design fornecido no desafio
 
-![Descrição da Imagem](./interactive-card/src/assets/cartao-interativo.png)
+![Descrição da Imagem](./src/assets/cartao-interativo.png)
 
 # Link do desafio
 
